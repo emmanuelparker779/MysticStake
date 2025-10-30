@@ -1,5 +1,5 @@
 // MysticStake contract configuration copied from deployments
-export const CONTRACT_ADDRESS = '0x0000000000000000000000000000000000000000';
+export const CONTRACT_ADDRESS = '0x02E97E68614658b95905a71d63D866287101CF8F';
 
 // ABI generated from MysticStake.json in deployments/sepolia
 export const CONTRACT_ABI = [
