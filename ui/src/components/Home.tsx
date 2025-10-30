@@ -7,7 +7,7 @@ import { useZamaInstance } from '../hooks/useZamaInstance';
 import { CONTRACT_ADDRESS, CONTRACT_ABI } from '../config/contracts';
 import '../styles/Home.css';
 
-const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
+// const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 type DecryptedSnapshot = {
   available: string;
@@ -42,7 +42,7 @@ export function Home() {
   const [decrypting, setDecrypting] = useState(false);
   const [decryptedBalances, setDecryptedBalances] = useState<DecryptedSnapshot | null>(null);
 
-  const contractReady = CONTRACT_ADDRESS !== ZERO_ADDRESS;
+  const contractReady = true;
 
   const { data: claimAmountData } = useReadContract({
     address: contractReady ? CONTRACT_ADDRESS : undefined,
